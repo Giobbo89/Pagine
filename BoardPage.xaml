@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="emotizeapp.Pages.BoardPage"
+             BackgroundColor="Silver">
+  <ContentPage.Content>
+    <StackLayout HorizontalOptions="Center">
+      <ContentView	BackgroundColor="Green"
+			      	HeightRequest="60"
+			      	WidthRequest="1000"
+			      	Margin="0,20,0,0">
+        <Label  x:Name="labelTitle"
+			    Text="LA TUA BACHECA"
+			    HorizontalOptions="Center"
+			    FontSize="20"
+			    FontAttributes="Bold"
+			    Margin="0,15,0,0"
+			    BackgroundColor="Green"
+			    TextColor="White">
+        </Label>
+	</ContentView>
+		<ListView x:Name="postList"
+				  HeightRequest="150"
+				  BackgroundColor="White"
+				  Margin="10,20,10,10"
+				  RowHeight="50"
+				  ItemsSource="{Binding PostsList}">
+           <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Vertical">
+                            <Label 	Text="{Binding Contenuto}"
+                            		TextColor="Black"
+									HeightRequest="30"
+									FontSize="12"
+									LineBreakMode="WordWrap"
+									Margin="10,0,0,0"/>
+                            <Label 	Text="{Binding DataInserimento}"
+									TextColor="Gray"
+									FontSize="9"
+									HeightRequest="20"
+									Margin="10,0,0,0"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+          </ListView>
+		<Entry 	x:Name="newPost"
+				Placeholder ="Inserisci nuovo post"
+				Text ="{Binding Contenuto}"
+				Margin="10,0,10,10"/>
+		<StackLayout  Orientation="Horizontal"
+                  HorizontalOptions="Center"
+			        Margin="50,0,50,0">
+        <Button	x:Name="newPostBtn"
+			    Text="Nuovo post"
+			    IsVisible="true"
+			    FontSize="12"
+				Margin="0,0,0,10"
+          FontAttributes="Bold"
+			    BackgroundColor="White"
+          TextColor="Black"
+				Command="{Binding ButtonClick}"
+				Clicked="OnNewPostClicked">
+        </Button>
+        <Button	x:Name="backToHomeBtn"
+			    Text="Torna alla home"
+			    FontSize="12"
+			    Margin="0,0,0,10"
+          FontAttributes="Bold"
+			    BackgroundColor="White"
+          TextColor="Black"
+			    Clicked="OnBackHomeClicked">
+        </Button>
+      </StackLayout>
+	</StackLayout>
+  </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="emotizeapp.Pages.RequestsPage"
+             BackgroundColor="Silver">
+  <ContentPage.Content>
+    <StackLayout HorizontalOptions="Center">
+      <Image 	x:Name="imgHome"
+			    	Source="notfound.png"
+            HorizontalOptions="Center"
+			    	IsVisible="true"
+			    	HeightRequest="200"
+			    	Margin="0,50,0,0">
+      </Image>
+      <Label  x:Name="labelUser"
+			  		Text="NOME COGNOME"
+				  	HorizontalOptions="Center"
+				  	FontSize="40"
+				  	FontAttributes="Bold"
+				  	Margin="0,15,0,0"
+				  	TextColor="White">
+      </Label>
+      <Button x:Name="profileBtn"
+			    	Text="Vedi profilo"
+			    	FontSize="13"
+			    	FontAttributes="Bold"
+			    	Margin="70,20,70,0"
+			    	Clicked="OnProfileClicked">
+      </Button>
+      <StackLayout Orientation="Horizontal">
+        <Image 	x:Name="left"
+			    	Source="Images/leftArrow.png"
+			    	IsVisible="true"
+			    	HeightRequest="40"
+			    	Margin="7,30,0,0">
+        </Image>
+        <Image 	x:Name="accept"
+			    	Source="Images/accept.png"
+			    	IsVisible="true"
+			    	HeightRequest="40"
+			    	Margin="30,30,0,0">
+        </Image>
+        <Image 	x:Name="decline"
+			    	Source="Images/decline.png"
+			    	IsVisible="true"
+			    	HeightRequest="40"
+			    	Margin="30,30,0,0">
+        </Image>
+        <Image 	x:Name="right"
+			    	Source="Images/rightArrow.png"
+			    	IsVisible="true"
+			    	HeightRequest="40"
+			    	Margin="30,30,0,0">
+        </Image>
+      </StackLayout>
+    </StackLayout>
+  </ContentPage.Content>
+</ContentPage>

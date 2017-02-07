@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="emotizeapp.Pages.RegisterPage"
+             BackgroundColor="Silver">
+  <ContentPage.Content>
+    <StackLayout HorizontalOptions="Center">
+      <ContentView	BackgroundColor="Green"
+			      	HeightRequest="60"
+			      	WidthRequest="1000"
+			      	Margin="0,20,0,0">
+        <Label  x:Name="labelTitle"
+			    Text="REGISTRAZIONE"
+			    HorizontalOptions="Center"
+			    FontSize="20"
+			    FontAttributes="Bold"
+			    Margin="0,15,0,0"
+			    BackgroundColor="Green"
+			    TextColor="White">
+        </Label>
+      </ContentView>
+      <ScrollView>
+        <StackLayout>
+          <Label	x:Name="labelName"
+                  	Text="Nome"
+                  	FontSize="20"
+                  	FontAttributes="Bold"
+                  	Margin="50,50,0,0"
+                  	TextColor="White">
+          </Label>
+          <Entry	x:Name="entryName"
+			        FontSize="20"
+			        Keyboard="Text"
+			        Placeholder="Inserisci il nome"
+			        Margin="50,5,50,0">
+          </Entry>
+          <Label 	x:Name="labelSurname"
+			        Text="Cognome"
+			        FontSize="20"
+			        FontAttributes="Bold"
+			        Margin="50,50,0,0"
+			        TextColor="White">
+          </Label>
+          <Entry	x:Name="entrySurname"
+			        FontSize="20"
+			        Keyboard="Text"
+			        Placeholder="Inserisci il cognome"
+			        Margin="50,5,50,0">
+          </Entry>
+          <Label 	x:Name="labelMail"
+			        Text="Mail"
+			        FontSize="20"
+			        FontAttributes="Bold"
+			        Margin="50,50,0,0"
+			        TextColor="White">
+          </Label>
+          <Entry	x:Name="entryMail"
+			        FontSize="20"
+			        Keyboard="Email"
+			        Placeholder="Inserisci la mail"
+			        Margin="50,0,50,0">
+          </Entry>
+          <Label	x:Name="labelBirthday"
+                  	Text="Data di nascita"
+                  	FontSize="20"
+                  	FontAttributes="Bold"
+                  	Margin="50,50,0,0"
+                  	TextColor="White">
+          </Label>
+          <DatePicker	x:Name="entryBirthday"
+                      	Format="dd/MM/yyyy"
+                      	Margin="50,0,50,0">
+          </DatePicker>
+          <Label 	x:Name="labelGender"
+                  	Text="Sesso"
+                  	FontSize="20"
+                  	FontAttributes="Bold"
+                  	Margin="50,50,0,0"
+                  	TextColor="White">
+          </Label>
+          <StackLayout Orientation="Horizontal">
+            <Label 	x:Name="labelMale"
+                    Text="Maschio"
+                    FontSize="20"
+                    Margin="50,0,0,0"
+                    TextColor="White">
+            </Label>
+            <Switch	x:Name="switchGender"
+                    WidthRequest="50"
+                    Margin="50,0,0,0"
+                    BackgroundColor="White">
+            </Switch>
+            <Label 	x:Name="labelFemale"
+                    Text="Femmina"
+                    FontSize="20"
+                    Margin="50,0,0,0"
+                    TextColor="White">
+            </Label>
+          </StackLayout>
+        </StackLayout>
+      </ScrollView>
+      <Button	x:Name="continueBtn"
+			    Text="Continua"
+			    WidthRequest="130"
+			    HeightRequest="60"
+			    Margin="50,50,50,0"
+              FontAttributes="Bold"
+			    BackgroundColor="White"
+          TextColor="Black"
+			    Clicked="OnContinueClicked">
+      </Button>
+    </StackLayout>
+  </ContentPage.Content>
+</ContentPage>

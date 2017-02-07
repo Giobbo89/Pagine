@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="emotizeapp.Pages.FaceMatchResultPage"
+             BackgroundColor="Silver">
+  <ContentPage.Content>
+    <StackLayout HorizontalOptions="Center">
+      <ContentView	BackgroundColor="Green"
+			      	HeightRequest="60"
+			      	WidthRequest="1000"
+			      	Margin="0,20,0,0">
+        <Label x:Name="labelTitle"
+			   Text="RISULTATO RICERCA"
+			   HorizontalOptions="Center"
+			   FontSize="20"
+			   FontAttributes="Bold"
+			   Margin="0,15,0,0"
+			   BackgroundColor="Green"
+			   TextColor="White">
+        </Label>
+      </ContentView>
+      <Image	x:Name="result"
+			    Source="result.png"
+          HorizontalOptions="Center"
+			    HeightRequest="200"
+			    Margin="0,30,0,0">
+      </Image>
+      <Label  x:Name="labelUser"
+			  Text="NOME COGNOME"
+			  HorizontalOptions="Center"
+			  FontSize="20"
+			  FontAttributes="Bold"
+			  Margin="0,15,0,0"
+			  TextColor="White">
+      </Label>
+      <Button x:Name="requestBtn"
+          Text="Invia richiesta di amicizia"
+          FontSize="13"
+          FontAttributes="Bold"
+          Margin="90,10,90,0"
+          BackgroundColor="White"
+          TextColor="Black"
+          Clicked="OnRequestClicked">
+      </Button>
+      <Button 	x:Name="profileBtn"
+			    Text="Vedi profilo"
+			    FontSize="13"
+			    FontAttributes="Bold"
+			    Margin="90,10,90,0"
+			    BackgroundColor="White"
+          TextColor="Black"
+			    Clicked="OnProfileClicked">
+      </Button>
+      <Button 	x:Name="backBtn"
+		    	Text="Indietro"
+			    FontSize="13"
+			    FontAttributes="Bold"
+			    BackgroundColor="White"
+          TextColor="Black"
+                Margin="90,10,90,0"
+			    Clicked="OnBackClicked">
+      </Button>
+    </StackLayout>
+  </ContentPage.Content>
+</ContentPage>

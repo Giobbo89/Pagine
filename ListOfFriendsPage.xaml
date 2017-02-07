@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="emotizeapp.Pages.ListOfFriendsPage"
+             BackgroundColor="Silver">
+  <ContentPage.Content>
+    <StackLayout HorizontalOptions="Center">
+      <ContentView	BackgroundColor="Green"
+			      	HeightRequest="60"
+			      	WidthRequest="1000"
+			      	Margin="0,20,0,0">
+        <Label  x:Name="labelTitle"
+			    Text="I TUOI AMICI"
+			    HorizontalOptions="Center"
+			    FontSize="20"
+			    FontAttributes="Bold"
+			    Margin="0,15,0,0"
+			    BackgroundColor="Green"
+			    TextColor="White">
+        </Label>
+      </ContentView>
+      <ListView x:Name="friendslist"
+            HeightRequest="180"
+            BackgroundColor="White"
+            Margin="10,20,10,10"
+            RowHeight="40"
+                ItemSelected="OnSelectFriend">
+      </ListView>
+        <Button	x:Name="backToHomeBtn"
+			    Text="Torna alla home"
+          HorizontalOptions="Center"
+			    FontSize="12"
+			    Margin="0,0,0,10"
+                FontAttributes="Bold"
+			    BackgroundColor="White"
+          TextColor="Black"
+			    Clicked="OnBackHomeClicked">
+        </Button>
+    </StackLayout>
+  </ContentPage.Content>
+</ContentPage>

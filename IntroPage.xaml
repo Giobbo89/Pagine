@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="emotizeapp.Pages.IntroPage"
+             BackgroundColor="Silver">
+  <ContentPage.Content>
+    <StackLayout HorizontalOptions="Center">
+      <Button	x:Name="loginBtn"
+			    Text="Login"
+			    HeightRequest="60"
+			    Margin="50,90,50,0"
+          FontAttributes="Bold"
+			    BackgroundColor="White"
+          TextColor="Black"
+			    Clicked="OnLoginClicked">
+      </Button>
+      <Button	x:Name="otherLoginBtn"
+			    Text="Login con altro utente"
+			    HeightRequest="60"
+			    Margin="50,10,50,0"
+              FontAttributes="Bold"
+			    BackgroundColor="White"
+          TextColor="Black"
+			    Clicked="OnLoginClicked">
+      </Button>
+      <Button	x:Name="facebookBtn"
+			    Text="Login tramite Facebook"
+			    HeightRequest="60"
+			    Margin="50,10,50,0"
+             FontAttributes="Bold"
+			    BackgroundColor="White"
+          TextColor="Black"
+			    Clicked="OnFacebookClicked">
+      </Button>
+      <Button	x:Name="registerBtn"
+			    Text="Registrati"
+			    HeightRequest="60"
+			    Margin="50,10,50,0"
+          FontAttributes="Bold"
+			    BackgroundColor="White"
+          TextColor="Black"
+			    Clicked="OnRegisterClicked">
+      </Button>
+    </StackLayout>
+  </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="emotizeapp.Pages.PhotoActionsPage"
+             BackgroundColor="Silver">
+  <ContentPage.Content>
+    <StackLayout HorizontalOptions="Center">
+      <Image 	x:Name="imgAction"
+			    Source="camera.png"
+          HorizontalOptions="Center"
+			    IsVisible="true"
+			    HeightRequest="200"
+			    Margin="0,50,0,0">
+      </Image>
+      <ActivityIndicator	x:Name="spinner"
+							IsVisible="false"
+				          	IsRunning="true"
+				          	Color="Green"
+				          	HeightRequest="250"
+				          	Margin="0,50,0,0">
+      </ActivityIndicator>
+      <Button	x:Name="similarBtn"
+			  	Text="Trova simile"
+				WidthRequest="500"
+			  	Margin="30,60,30,0"
+              FontSize="13"
+              FontAttributes="Bold"
+			    BackgroundColor="White"
+          TextColor="Black"
+			  	Clicked="OnFindSimilarClicked">
+      </Button>
+      <Button	x:Name="emotionBtn"
+              	Text="Scan emozioni"
+              	FontSize="13"
+              	Margin="30,0,30,0"
+              FontAttributes="Bold"
+			    BackgroundColor="White"
+          TextColor="Black"
+              	Clicked="OnScanEmotionClicked">
+      </Button>
+      <Button	x:Name="tagBtn"
+              	Text="AutoTag"
+              	FontSize="13"
+              	Margin="30,0,30,0"
+              FontAttributes="Bold"
+			    BackgroundColor="White"
+          TextColor="Black"
+              	Clicked="OnFindTagClicked">
+      </Button>
+      <Button	x:Name="homeBtn"
+              	Text="Torna alla home"
+              	FontSize="13"
+              FontAttributes="Bold"
+			    BackgroundColor="White"
+          TextColor="Black"
+              	Margin="30,0,30,0"
+          		Clicked="OnBackHomeClicked">
+      </Button>
+    </StackLayout>
+  </ContentPage.Content>
+</ContentPage>

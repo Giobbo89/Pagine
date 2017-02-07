@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="emotizeapp.Pages.HomePage"
+             BackgroundColor="Silver">
+  <ContentPage.Content>
+    <ScrollView HorizontalOptions="Center">
+    <StackLayout HorizontalOptions="Center">
+      <ContentView		BackgroundColor="Green"
+						          HeightRequest="50"
+				      	      Margin="0,20,0,0"
+				      	      WidthRequest="1000">
+        <Button x:Name="userBtn"
+			    Text="Nome cognome"
+			    HorizontalOptions="Center"
+			    FontSize="15"
+			    FontAttributes="Bold"
+			    Margin="0,0,0,0"
+			    BackgroundColor="Green"
+			    TextColor="White"
+			    Clicked="OnProfileClicked">
+        </Button>
+      </ContentView>
+      <Label	x:Name="labelEmo"
+			    Text="Ho rilevato questa emozione"
+			    TextColor="White"
+			    FontSize="15"
+			    HorizontalOptions="Center"
+			    Margin="0,10,0,0">
+      </Label>
+      <Image 	x:Name="imgHome"
+			    Source="Images/camera.png"
+          HorizontalOptions="Center"
+			    IsVisible="true"
+			    HeightRequest="210"
+			    Margin="0,20,0,0">
+      </Image>
+      <Button 	x:Name="emotionBtn"
+            Text="Rileva emozione"
+            FontSize="15"
+            FontAttributes="Bold"
+            IsVisible="true"
+            Margin="90,20,90,0"
+			    BackgroundColor="White"
+          TextColor="Black"
+            Clicked="OnEmotionClicked">
+      </Button>
+      <Button 	x:Name="logoutBtn"
+			    Text="Logout"
+			    FontSize="15"
+			    FontAttributes="Bold"
+			    Margin="90,0,90,0"
+			    TextColor="White"
+			    BackgroundColor="Red"
+			    Clicked="OnLogoutClicked">
+      </Button>
+    </StackLayout>
+    </ScrollView>
+  </ContentPage.Content>
+</ContentPage>

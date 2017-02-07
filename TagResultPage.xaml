@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="emotizeapp.Pages.TagResultPage"
+             BackgroundColor="Silver">
+  <ContentPage.Content>
+    <StackLayout HorizontalOptions="Center">
+      <ContentView	BackgroundColor="Green"
+			      	HeightRequest="60"
+			      	WidthRequest="1000"
+			      	Margin="0,20,0,0">
+        <Label  x:Name="labelTitle"
+			    Text="RISULTATO TAGS SCAN"
+			    HorizontalOptions="Center"
+			    FontSize="20"
+			    FontAttributes="Bold"
+			    Margin="0,15,0,0"
+			    BackgroundColor="Green"
+			    TextColor="White">
+        </Label>
+      </ContentView>
+      <Image 	x:Name="imgTag"
+			    Source="camera.png"
+          HorizontalOptions="Center"
+			    IsVisible="true"
+			    HeightRequest="200"
+			    Margin="0,50,0,0">
+      </Image>
+      <Label 	x:Name="labelString"
+			    Text="Possibili tag trovati:"
+			    HorizontalOptions="Center"
+			    FontSize="15"
+			    Margin="0,20,0,0"
+			    FontAttributes="Bold">
+      </Label>
+      <StackLayout	HorizontalOptions="Center"
+			      	Orientation="Horizontal"
+			      	Margin="0,20,0,0">
+        <Label 	x:Name="labelTag1"
+			    Text=""
+			    HorizontalOptions="Center"
+			    FontSize="15"
+			    Margin="10,0,10,0"
+			    FontAttributes="Bold">
+        </Label>
+        <Label 	x:Name="labelTag2"
+			    Text=""
+			    HorizontalOptions="Center"
+			    FontSize="15"
+			    Margin="0,0,10,0"
+			    FontAttributes="Bold">
+        </Label>
+        <Label 	x:Name="labelTag3"
+			    Text=""
+			    HorizontalOptions="Center"
+			    FontSize="15"
+			    Margin="0,0,10,0"
+			    FontAttributes="Bold">
+        </Label>
+      </StackLayout>
+      <StackLayout	HorizontalOptions="Center"
+			      	Orientation="Horizontal"
+			      	Margin="0,5,0,0">
+        <Label 	x:Name="labelTag4"
+			    Text=""
+			    HorizontalOptions="Center"
+			    FontSize="15"
+			    Margin="10,0,10,0"
+			    FontAttributes="Bold">
+        </Label>
+        <Label 	x:Name="labelTag5"
+			    Text=""
+			    HorizontalOptions="Center"
+			    FontSize="15"
+			    Margin="0,0,10,0"
+			    FontAttributes="Bold">
+        </Label>
+        <Label 	x:Name="labelTag6"
+			    Text=""
+			    HorizontalOptions="Center"
+			    FontSize="15"
+			    Margin="0,0,10,0"
+			    FontAttributes="Bold">
+        </Label>
+      </StackLayout>
+      <Button	x:Name="backBtn"
+			    Text="Indietro"
+			    WidthRequest="50"
+			    FontSize="12"
+			    HeightRequest="50"
+			    Margin="50,50,50,0"
+              FontAttributes="Bold"
+			    BackgroundColor="White"
+          TextColor="Black"
+			    Clicked="OnBackClicked">
+      </Button>
+    </StackLayout>
+  </ContentPage.Content>
+</ContentPage>

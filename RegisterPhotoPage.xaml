@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="emotizeapp.Pages.RegisterPhotoPage"
+             BackgroundColor="Silver">
+  <ContentPage.Content>
+    <StackLayout HorizontalOptions="Center">
+      <ContentView	BackgroundColor="Green"
+					HeightRequest="60"
+					WidthRequest="1000"
+					Margin="0,20,0,0">
+        <Label 	x:Name="labelTitle"
+				Text="SCEGLI LA TUA FOTO PROFILO"
+				HorizontalOptions="Center"
+				FontSize="20"
+				FontAttributes="Bold"
+				Margin="0,15,0,0"
+				BackgroundColor="Green"
+				TextColor="White">
+        </Label>
+      </ContentView>
+      <Button	x:Name="cameraBtn"
+				Text="Scatta una foto"
+				WidthRequest="50"
+				HeightRequest="60"
+				IsVisible="true"
+				IsEnabled="true"
+				Margin="30,200,30,0"
+				Clicked="OnCameraClicked">
+      </Button>
+      <Button	x:Name="galleryBtn"
+				Text="Scegli da galleria"
+				WidthRequest="50"
+				HeightRequest="60"
+				IsVisible="true"
+				IsEnabled="true"
+				Margin="30,20,30,0"
+              FontAttributes="Bold"
+			    BackgroundColor="White"
+          TextColor="Black"
+				Clicked="OnGalleryClicked">
+      </Button>
+      <ActivityIndicator	x:Name="spinner"
+							IsVisible="false"
+							IsRunning="true"
+							Color="Green"
+							HeightRequest="200"
+							Margin="0,150,0,0">
+      </ActivityIndicator>
+    </StackLayout>
+  </ContentPage.Content>
+</ContentPage>

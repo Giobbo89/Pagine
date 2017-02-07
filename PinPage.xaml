@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="emotizeapp.Pages.PinPage"
+             BackgroundColor="Silver">
+  <ContentPage.Content>
+    <StackLayout HorizontalOptions="Center">
+      <ContentView	BackgroundColor="Green"
+			      	HeightRequest="60"
+			      	WidthRequest="1000"
+			      	Margin="0,20,0,0">
+        <Label  x:Name="labelTitle"
+			    Text="INSERISCI IL TUO PIN"
+			    HorizontalOptions="Center"
+			    FontSize="20"
+			    FontAttributes="Bold"
+			    Margin="0,15,0,0"
+			    BackgroundColor="Green"
+			    TextColor="White">
+        </Label>
+      </ContentView>
+      <Entry 	x:Name="entryPin"
+			    FontSize="20"
+			    Keyboard="Numeric"
+				IsPassword="true"
+				HorizontalTextAlignment="Center"
+			    Margin="120,70,120,0"
+			    BackgroundColor="White"
+			    TextColor="Black">
+      </Entry>
+      <ActivityIndicator	x:Name="spinner"
+							IsVisible="true"
+							IsRunning="false"
+							Color="Green"
+							HeightRequest="150"
+							Margin="0,80,0,0">
+      </ActivityIndicator>
+      <Button 	x:Name="pinBtn"
+		    	Text="Conferma Pin"
+		    	FontSize="20"
+		    	Margin="30,10,30,0"
+		    	IsEnabled="true"
+                FontAttributes="Bold"
+			    BackgroundColor="White"
+          TextColor="Black"
+		    	Clicked="OnConfirmPinClicked">
+      </Button>
+    </StackLayout>
+  </ContentPage.Content>
+</ContentPage>
