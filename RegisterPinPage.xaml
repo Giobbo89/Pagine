@@ -20,7 +20,7 @@
         </Label>
       </ContentView>
       <Entry 	x:Name="entryPin"
-			    FontSize="30"
+			    FontSize="20"
 				IsPassword="true"
 			    Keyboard="Numeric"
 				HorizontalTextAlignment="Center"
@@ -37,7 +37,7 @@
       </ActivityIndicator>
       <Button 	x:Name="setPinBtn"
 		    	Text="Conferma Pin"
-		    	HeightRequest="60"
+                FontSize="20"
 		    	Margin="30,100,30,0"
 		    	IsEnabled="true"
                 FontAttributes="Bold"

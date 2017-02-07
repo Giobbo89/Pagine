@@ -23,46 +23,46 @@
         <StackLayout>
           <Label	x:Name="labelName"
                   	Text="Nome"
-                  	FontSize="20"
+                  	FontSize="15"
                   	FontAttributes="Bold"
                   	Margin="50,50,0,0"
                   	TextColor="White">
           </Label>
           <Entry	x:Name="entryName"
-			        FontSize="20"
+			        FontSize="15"
 			        Keyboard="Text"
 			        Placeholder="Inserisci il nome"
 			        Margin="50,5,50,0">
           </Entry>
           <Label 	x:Name="labelSurname"
 			        Text="Cognome"
-			        FontSize="20"
+			        FontSize="15"
 			        FontAttributes="Bold"
 			        Margin="50,50,0,0"
 			        TextColor="White">
           </Label>
           <Entry	x:Name="entrySurname"
-			        FontSize="20"
+			        FontSize="15"
 			        Keyboard="Text"
 			        Placeholder="Inserisci il cognome"
 			        Margin="50,5,50,0">
           </Entry>
           <Label 	x:Name="labelMail"
 			        Text="Mail"
-			        FontSize="20"
+			        FontSize="15"
 			        FontAttributes="Bold"
 			        Margin="50,50,0,0"
 			        TextColor="White">
           </Label>
           <Entry	x:Name="entryMail"
-			        FontSize="20"
+			        FontSize="15"
 			        Keyboard="Email"
 			        Placeholder="Inserisci la mail"
 			        Margin="50,0,50,0">
           </Entry>
           <Label	x:Name="labelBirthday"
                   	Text="Data di nascita"
-                  	FontSize="20"
+                  	FontSize="15"
                   	FontAttributes="Bold"
                   	Margin="50,50,0,0"
                   	TextColor="White">
@@ -73,7 +73,7 @@
           </DatePicker>
           <Label 	x:Name="labelGender"
                   	Text="Sesso"
-                  	FontSize="20"
+                  	FontSize="15"
                   	FontAttributes="Bold"
                   	Margin="50,50,0,0"
                   	TextColor="White">
@@ -81,7 +81,7 @@
           <StackLayout Orientation="Horizontal">
             <Label 	x:Name="labelMale"
                     Text="Maschio"
-                    FontSize="20"
+                    FontSize="15"
                     Margin="50,0,0,0"
                     TextColor="White">
             </Label>
@@ -92,7 +92,7 @@
             </Switch>
             <Label 	x:Name="labelFemale"
                     Text="Femmina"
-                    FontSize="20"
+                    FontSize="15"
                     Margin="50,0,0,0"
                     TextColor="White">
             </Label>
@@ -101,8 +101,7 @@
       </ScrollView>
       <Button	x:Name="continueBtn"
 			    Text="Continua"
-			    WidthRequest="130"
-			    HeightRequest="60"
+			    FontSize="13"
 			    Margin="50,50,50,0"
               FontAttributes="Bold"
 			    BackgroundColor="White"

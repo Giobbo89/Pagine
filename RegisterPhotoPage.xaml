@@ -21,17 +21,15 @@
       </ContentView>
       <Button	x:Name="cameraBtn"
 				Text="Scatta una foto"
-				WidthRequest="50"
-				HeightRequest="60"
+				FontSize="20"
 				IsVisible="true"
 				IsEnabled="true"
-				Margin="30,200,30,0"
+				Margin="30,80,30,0"
 				Clicked="OnCameraClicked">
       </Button>
       <Button	x:Name="galleryBtn"
 				Text="Scegli da galleria"
-				WidthRequest="50"
-				HeightRequest="60"
+				FontSize="20"
 				IsVisible="true"
 				IsEnabled="true"
 				Margin="30,20,30,0"
@@ -44,7 +42,7 @@
 							IsVisible="false"
 							IsRunning="true"
 							Color="Green"
-							HeightRequest="200"
+							HeightRequest="150"
 							Margin="0,150,0,0">
       </ActivityIndicator>
     </StackLayout>
